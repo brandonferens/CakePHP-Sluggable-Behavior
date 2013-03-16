@@ -1,4 +1,4 @@
-CakePHP 2.0 Sluggable Behavior
+CakePHP 2+ Sluggable Behavior
 ==============================
 
 CakePHP 2+ Compatible version based largely on Mariano Iglesias' original Sluggable Behavior
@@ -9,10 +9,11 @@ Installation
 2. create field called 'slug' with VARCHAR(255) and Make name/title field as VARCHAR(250)
 2. Setup the behaviour as below in every Model where you need Slugable
 
+<pre>
 public  $actsAs = array('Sluggable.Sluggable' => array(
 	'label'=>'name', // Name of base field
 	'slug'=>'slug', // Slug Field Name
 	'separator'=>'-',
 	'overwrite'=>true   // Do you need to rewrite this at every edit?
 ));
-
+</pre>
